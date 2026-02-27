@@ -1,0 +1,22 @@
+{
+  "name": "v2ex-daily",
+  "module": "src/index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "generate": "bun run src/index.ts generate",
+    "serve": "bun run src/index.ts serve",
+    "help": "bun run src/index.ts --help"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "commander": "^14.0.3",
+    "openai": "^6.25.0",
+    "yaml": "^2.8.2"
+  }
+}

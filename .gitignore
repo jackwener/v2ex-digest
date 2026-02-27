@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Output
+out/
+data/
+
+# Config with secrets
+config.yaml
+config.yml
+
+# Bun
+bun.lock
+
+# OS
+.DS_Store

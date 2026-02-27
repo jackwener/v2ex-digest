@@ -1,0 +1,24 @@
+# V2EX API Token (optional, from https://www.v2ex.com/settings/tokens)
+v2ex:
+  token: ""
+
+# AI Configuration
+ai:
+  provider: "openai"     # "openai" or "anthropic"
+  api_key: ""            # or set OPENAI_API_KEY / ANTHROPIC_API_KEY env var
+  model: "gpt-4o-mini"
+  base_url: ""           # optional, for compatible endpoints
+
+# Generation Settings
+generate:
+  nodes: ["hot"]                # "hot", "latest", or node names: "python", "golang", "create", "programmer"
+  exclude_nodes: ["promotions"] # nodes to filter out
+  top_n: 20
+  skip_hours: 72                # skip items seen in last N hours
+  # serve mode intervals
+  fetch_interval_min: 10        # collector poll interval (minutes)
+  build_interval_min: 30        # builder check interval (minutes)
+
+# Template
+template:
+  title: "V2EX 日报 {date}"
