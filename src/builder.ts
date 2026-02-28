@@ -52,7 +52,7 @@ export class Builder {
 
     async runOnce(): Promise<string | null> {
         const period = new Date().toISOString().slice(0, 10);
-        const channel = "v2ex-daily";
+        const channel = "v2ex-digest";
 
         // Already published today?
         if (this.store.isPublished(channel, period)) {

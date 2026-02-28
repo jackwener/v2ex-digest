@@ -11,7 +11,7 @@ export class V2EXClient {
 
     private async request<T>(path: string): Promise<T> {
         const headers: Record<string, string> = {
-            "User-Agent": "v2ex-daily/1.0",
+            "User-Agent": "v2ex-digest/1.0",
         };
         if (this.token) {
             headers["Authorization"] = `Bearer ${this.token}`;

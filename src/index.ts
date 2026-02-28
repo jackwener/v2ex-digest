@@ -16,7 +16,7 @@ import type { NewsItem, SummarizedItem, AppConfig } from "./types";
 const program = new Command();
 
 program
-    .name("v2ex-daily")
+    .name("v2ex-digest")
     .description("V2EX 日报生成器 — 抓取、评分、AI 总结、输出 Markdown")
     .version("0.1.0");
 
@@ -63,7 +63,7 @@ program
 async function runServe(opts: any) {
     const config = loadConfig(opts.config);
 
-    console.log("🚀 V2EX Daily — Serve Mode");
+    console.log("🚀 V2EX Digest — Serve Mode");
     console.log(`   Nodes: ${config.generate.nodes.join(", ")}`);
     console.log(`   Exclude: ${config.generate.excludeNodes.join(", ") || "(none)"}`);
     console.log(`   Fetch interval: ${config.generate.fetchIntervalMin}min`);
@@ -119,7 +119,7 @@ async function runGenerate(opts: any) {
     const config = loadConfig(opts.config, cliOverrides);
     const today = new Date().toISOString().slice(0, 10);
 
-    console.log("📋 V2EX Daily Generator");
+    console.log("📋 V2EX Digest Generator");
     console.log(`   Date: ${today}`);
     console.log(`   Nodes: ${config.generate.nodes.join(", ")}`);
     console.log(`   Exclude: ${config.generate.excludeNodes.join(", ") || "(none)"}`);

@@ -1,5 +1,5 @@
 {
-  "name": "v2ex-daily",
+  "name": "v2ex-digest",
   "module": "src/index.ts",
   "type": "module",
   "private": true,

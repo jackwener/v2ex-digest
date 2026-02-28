@@ -1,4 +1,4 @@
-# V2EX Daily reporter
+# V2EX Digest
 
 V2EX 日报生成器 — 抓取 V2EX 话题，HN-like 评分排序，AI 生成摘要，输出 Markdown。
 
